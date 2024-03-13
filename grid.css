@@ -1,0 +1,37 @@
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto;
+    grid-auto-rows: 300px;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+    /* grid-gap: 20 px;     */
+}
+
+.grid-item
+{
+    width: 50%;
+    /* height: 30px; */
+    border: 2px solid black;
+    margin: 15px;
+    text-align: center;
+}
+
+.grid-item-1
+{
+    background-color: aquamarine;
+    grid-area: header;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-item-2
+{
+    background-color: blueviolet;
+    grid-area: sidebar;
+}
+.grid-item-3
+{
+    grid-area: content;
+    background-color: teal;
+}
